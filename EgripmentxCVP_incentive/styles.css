@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('images/background.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.logo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-logo, .cvp-logo {
+    height: 60px;
+    object-fit: contain;
+}
+
+.incentive-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.gift-card-img {
+    height: 60px;
+    object-fit: contain;
+}
+
+.incentive-text {
+    text-align: center;
+}
+
+.incentive-text h2 {
+    color: #e47911;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+.bonus-text {
+    color: #e47911;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.2em;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 10px;
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.15)) drop-shadow(0 3px 3px rgba(0, 0, 0, 0.1));
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.product-card:hover img {
+    filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.2)) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
+    transform: translateY(-4px) scale(1.02);
+}
+
+.specs {
+    flex-grow: 1;
+    margin-bottom: 15px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.specs::-webkit-scrollbar {
+    width: 4px;
+}
+
+.specs::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.specs::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 2px;
+}
+
+.specs::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.specs ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.specs li {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    color: #555;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.4;
+}
+
+.specs li:before {
+    content: "•";
+    position: absolute;
+    left: 5px;
+    color: #e47911;
+}
+
+.pricing {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: auto;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+.price-row.dealer {
+    font-weight: bold;
+    color: #2f80ed;
+}
+
+.amazon-offer {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    color: #e47911;
+    font-weight: bold;
+} 
